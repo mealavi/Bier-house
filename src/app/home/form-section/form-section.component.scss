@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('../_assets/fonts/open-sans/OpenSans-Semibold-webfont.ttf')  format('truetype');
+
+}
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../_assets/fonts/open-sans/OpenSans-Bold-webfont.ttf')  format('truetype');
+
+}
+
+form{
+  margin-top:20px;
+  font-family: "Open Sans Semibold";
+}
+button{
+  border-radius: 15px;
+  margin-left:10px;
+}
+button.btn-warning
+{
+  background-color: orangered;
+  border: none;
+  &:hover{
+    background-color: #ff1e00;
+  }
+
+}
+#beerTime
+{
+  margin-bottom: 20px;
+}
+h3 {
+  font-family: OpenSansBold;
+}
+p{
+  font-family: "Open Sans Semibold";
+}
+input.ng-invalid.ng-touched
+{
+  border:1px solid red;
+}

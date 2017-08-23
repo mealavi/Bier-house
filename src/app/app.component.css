@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./home/_assets/fonts/open-sans/OpenSans-Light-webfont.ttf") format("truetype");
+}
+
+* {
+  font-family: "Open Sans";
+}
+
+.homeUnderLayer {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  float: right;
+}
+
+.header {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 60px;
+}
+
+.header div .logo {
+  height: 60px;
+}
+
+.header .logo {
+  list-style-type: none;
+}
+
+.header li.img-responsive {
+  background: url("./home/asset/logo.png") center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.header ul.nav {
+  height: 60px;
+}
+
+.header ul.nav li {
+  background-color: transparent;
+  float: left;
+  padding-top: 10px;
+  height: 60px;
+}
+
+.header ul.nav li a {
+  background-color: transparent;
+  height: 60px;
+  color: #263238;
+  cursor: pointer;
+  -webkit-transition: text-decoration 2s;
+  -moz-transition: text-decoration 2s;
+  -ms-transition: text-decoration 2s;
+  -o-transition: text-decoration 2s;
+  transition: text-decoration 2s;
+}
+
+.header ul.nav li a:hover {
+  text-decoration: underline;
+}
+
+span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.clear {
+  cursor: pointer;
+}
+
+.footerSection {
+  background-color: #454545;
+  height: 120px;
+  padding-top: 50px;
+  font-size: 10px;
+}
+
+.footerSection div {
+  color: #c8c8c8;
+}
+
+.footerSection div .footerspan {
+  color: gray;
+  font-size: 8px;
+  display: block;
+}
+
+.footerLogo {
+  background: url("./home/_assets/footer-graphic@2x.png") right center no-repeat;
+  height: 60px;
+  background-size: contain;
+  margin-top: -10px;
+}
+
+/*# sourceMappingURL=app.component.css.map */

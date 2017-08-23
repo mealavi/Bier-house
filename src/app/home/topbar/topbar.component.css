@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url("../_assets/fonts/open-sans/OpenSans-ExtraBold-webfont.ttf") format("truetype");
+  font-family: 'Open Sans Light';
+  src: url("../_assets/fonts/open-sans/OpenSans-Light-webfont.ttf") format("truetype"); }
+div.jumbotron {
+  background: url("asset/hero@2x.jpg") center center no-repeat;
+  background-size: cover;
+  text-align: left;
+  color: white; }
+  div.jumbotron h3 {
+    line-height: 1.5;
+    font-family: OpenSansBold; }
+  div.jumbotron a {
+    border-radius: 15px;
+    min-width: 85px;
+    font-family: "Open Sans Light"; }
+
+/*# sourceMappingURL=topbar.component.css.map */

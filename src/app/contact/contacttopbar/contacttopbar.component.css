@@ -1,0 +1,14 @@
+div.jumbotron {
+  background: url("asset/beer.png") center center no-repeat;
+  background-size: cover;
+  text-align: left;
+  min-height: 300px;
+  text-align: center; }
+  div.jumbotron h3 {
+    color: darkgray;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+    font-family: PacificoRegular; }
+
+/*# sourceMappingURL=contacttopbar.component.css.map */

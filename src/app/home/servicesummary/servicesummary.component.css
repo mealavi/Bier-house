@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url("../_assets/fonts/open-sans/OpenSans-Italic-webfont.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url("../_assets/fonts/open-sans/OpenSans-Bold-webfont.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../_assets/fonts/open-sans/OpenSans-Regular-webfont.ttf") format("truetype"); }
+div.jumbotron {
+  text-align: center;
+  padding-bottom: 30px; }
+  div.jumbotron h3 {
+    font-family: "OpenSansBold"; }
+  div.jumbotron h3 {
+    font-family: "Open Sans Semibold"; }
+
+div.jumbotron.jumbotron-fluid {
+  margin-bottom: 0px; }
+
+ul {
+  list-style-type: none; }
+  ul li h4 {
+    text-transform: capitalize;
+    font-family: "OpenSansBold"; }
+  ul li div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer; }
+  ul p {
+    font-size: 12px;
+    font-family: OpenSansItalic; }
+
+#icon1 {
+  background: url("asset/icon-direct-to-you@2x.png") center center no-repeat;
+  background-size: contain;
+  height: 60px; }
+
+#icon2 {
+  background: url("asset/icon-pub-less@2x.png") center center no-repeat;
+  background-size: contain;
+  height: 60px; }
+
+#icon3 {
+  background: url("asset/icon-peace-of-mind@2x.png") center center no-repeat;
+  background-size: contain;
+  height: 60px; }
+
+#icon4 {
+  background: url("asset/icon-expert-advice@2x.png") center center no-repeat;
+  background-size: contain;
+  height: 60px; }
+
+div button.btn-warning {
+  background-color: orangered;
+  border: none;
+  border-radius: 15px;
+  max-width: 200px;
+  margin-top: 30px; }
+  div button.btn-warning:hover {
+    background-color: #ff1e00; }
+
+/*# sourceMappingURL=servicesummary.component.css.map */

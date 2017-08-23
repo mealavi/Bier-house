@@ -1,0 +1,72 @@
+<div class="container">
+  <h2 class="col-xs-12">Contact Us</h2>
+
+  <div class="mapSection col-md-6 col-xs-12">
+    <div class="map col-xs-offset-1 col-xs-10">
+
+    </div>
+
+    <div class="address col-xs-offset-1  col-xs-10">
+      <label class="glyphicon glyphicon-phone-alt"></label>
+      <span>   Tel. :
+            +43 1 537 00-0</span><br>
+
+      <label class="glyphicon glyphicon-map-marker"></label><span>  Renngasse 1/Freyung
+            1010 Wien</span>
+    </div>
+  </div>
+
+
+  <div class="formSection col-md-6 col-xs-11">
+    <form class="col-md-10 col-xs-10" #f="ngForm">
+      <div class="form-group row">
+        <label for="name" class=" glyphicon glyphicon-user"
+               [ngClass]="{'text-success':name.valid,'text-danger':!name.valid&&name.touched}"></label>
+        <input type="text"
+               placeholder="Your Name"
+               class="form-control  col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10 "
+               id="name"
+               ngModel
+               #name="ngModel"
+               name="name"
+               required
+        >
+
+      </div>
+      <div class="form-group row">
+        <label for="email" class="  glyphicon glyphicon-globe "
+               [ngClass]="{'text-success':email.valid,'text-danger':!email.valid&&email.touched}"> </label>
+        <input type="text"
+               placeholder="your Email"
+               class="form-control col-md-10 col-xs-offset-1 col-xs-10 "
+               id="email"
+               ngModel
+               #email="ngModel"
+               name="email"
+               required
+               email>
+
+      </div>
+      <div class="form-group row">
+        <label for="message" [ngClass]="{'text-success':message.valid,'text-danger':!message.valid&&message.touched}" class=" glyphicon glyphicon-comment"></label>
+        <textarea rows="10"
+                  placeholder="Write youre message here"
+                  class="form-control  col-xs-offset-1 col-xs-10 col-md-10 "
+                  id="message"
+
+                  ngModel
+                  #message="ngModel"
+                  name="message"
+                  required>
+          </textarea>
+      </div>
+      <button class="btn  " type="submit" [disabled]="!f.valid"> Send My Message!</button>
+    </form>
+
+
+  </div>
+
+</div>
+
+
+
