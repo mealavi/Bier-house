@@ -1,7 +1,7 @@
 <div class="container-fluid container col-xs-12 col-md-12">
   <div class="row col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10" style="padding-left: 0px;" >
 
-    <div class=" col-md-6  col-xs-12" style=" padding-left:0px; " >
+    <div class=" col-md-6  col-xs-12"  >
         <h3>You're a couple moments away from getting a beer</h3>
         <p style="padding-right:10px ">
           let's start with some basics.
@@ -49,10 +49,10 @@
             <p *ngIf="!beertimes.valid&&beertimes.touched" style="color: red;">Hum ... ?! Dont worry,we are good at
               keeping secrets.</p>
 
-            <button class="btn btn-warning btn-sm col-xs-4  col-md-3 " type="button" [disabled]="!beertimes.valid">Get
+            <button class="btn btn-warning btn-sm col-xs-4  col-md-2 col-sm-2 " type="button" [disabled]="!beertimes.valid">Get
               Advice
             </button>
-            <button class="btn btn-primary btn-sm col-xs-4  col-md-3 " type="submit" [disabled]="!favoriteBeer.valid">
+            <button class="btn btn-primary btn-sm col-xs-4  col-md-2 col-sm-2 " type="submit" [disabled]="!favoriteBeer.valid">
               Get a Beer
             </button>
           </div>

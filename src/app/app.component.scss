@@ -29,7 +29,10 @@ $fontcolor:rgba(255,255,255,0.75);
 .header{
   background-color:$fontcolor;
   height: 60px;
-  position: relative;
+  position: fixed;
+  top:0px;
+  left: 0px;
+
 
   .logo{
     list-style-type: none;
