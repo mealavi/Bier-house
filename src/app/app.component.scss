@@ -27,17 +27,14 @@ $fontcolor:rgba(255,255,255,0.75);
 
 }
 .header{
-  position: relative;
   background-color:$fontcolor;
   height: 60px;
-  div .logo
-  {
-    height: 60px;
-  }
+  position: relative;
+
   .logo{
     list-style-type: none;
   }
-  li.img-responsive{
+  li.img{
     background: url('./home/asset/logo.png') center center no-repeat;
     background-size:contain;
 

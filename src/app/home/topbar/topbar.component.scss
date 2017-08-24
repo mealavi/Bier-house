@@ -7,13 +7,15 @@
   src: url('../_assets/fonts/open-sans/OpenSans-Light-webfont.ttf')
   format('truetype');
 }
-div.jumbotron
-{
-  background: url("asset/hero@2x.jpg")center center no-repeat;
+
+div {
+  background: url("asset/hero@2x.jpg") center center no-repeat;
   background-size: cover;
   text-align: left;
-
+  margin-left: 0px;
+  padding-left: 0px;
   color: white;
+}
   h3{
     line-height: 1.5;
     font-family: OpenSansBold;
@@ -24,4 +26,4 @@ div.jumbotron
     min-width: 85px;
     font-family: "Open Sans Light";
   }
-}
+

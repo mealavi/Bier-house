@@ -9,13 +9,17 @@
 
 }
 
+
 form{
   margin-top:20px;
   font-family: "Open Sans Semibold";
 }
 button{
+
   border-radius: 15px;
-  margin-left:10px;
+  margin-right:10px;
+  min-width: 200px;
+
 }
 button.btn-warning
 {
@@ -30,13 +34,20 @@ button.btn-warning
 {
   margin-bottom: 20px;
 }
+div{
+
+ margin-left:0px ;
 h3 {
   font-family: OpenSansBold;
 }
+
 p{
   font-family: "Open Sans Semibold";
+
+}
 }
 input.ng-invalid.ng-touched
 {
   border:1px solid red;
 }
+

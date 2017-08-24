@@ -1,9 +1,9 @@
-<div class="container-fluid ">
-  <div class="row">
-    <div class="col-md-6 col-xs-11 col-xs-offset-1 col-md-offset-0">
-      <div class="row col-md-offset-0 col-md-10  col-xs-12">
+<div class="container-fluid container col-xs-12 col-md-12">
+  <div class="row col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10" style="padding-left: 0px;" >
+
+    <div class=" col-md-6  col-xs-12" style=" padding-left:0px; " >
         <h3>You're a couple moments away from getting a beer</h3>
-        <p>
+        <p style="padding-right:10px ">
           let's start with some basics.
           By letting us know a bit about your is simply dummy text of the printing and typesetting industry. Lorem Ipsum
           has been the industry's standard dummy text ever since the 1500s.
@@ -11,46 +11,53 @@
           and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
           electronic typesetting, remaining essentially unchanged
         </p>
-      </div>
+
+
     </div>
-    <div class="col-md-6 col-md-offset-0 col-xs-11 col-xs-offset-1">
-      <form class="col-md-10 col-xs-10" (ngSubmit)="onSubmit(f)" #f="ngForm">
-        <div class="form-group row">
-          <label for="favoriteBeer">What's your favorite beer?</label>
-          <input type="text"
-                 placeholder="Mo Al"
-                 class="form-control col-md-10 col-xs-10 "
-                 id="favoriteBeer"
-                  ngModel
-                 #favoriteBeer="ngModel"
-                 name="favoriteBeer"
-            required>
-          <p *ngIf="!favoriteBeer.valid&&favoriteBeer.touched"
-             style="color: red;"> Let us know your Taste</p>
-        </div>
-        <div class="form-group row">
-          <label for="beerTime" >How many times a week do you drink a beer?</label>
-          <select id="beerTime"
-                  class="form-control"
-                  name="beerTime"
-                 ngModel
-                  name="beerTimes"
-                  #beertimes="ngModel"
+    <div class=" col-md-6  col-xs-12">
+      <div class="row">
+        <form class=" col-xs-12" (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <div class="form-group row">
+            <label for="favoriteBeer">What's your favorite beer?</label>
+            <input type="text"
+                   placeholder="Mo Al"
+                   class="form-control  "
+                   id="favoriteBeer"
+                   ngModel
+                   #favoriteBeer="ngModel"
+                   name="favoriteBeer"
+                   required>
+            <p *ngIf="!favoriteBeer.valid&&favoriteBeer.touched"
+               style="color: red;"> Let us know your Taste</p>
+          </div>
+          <div class="form-group row">
+            <label for="beerTime">How many times a week do you drink a beer?</label>
+            <select id="beerTime"
+                    class="form-control"
+                    name="beerTime"
+                    ngModel
+                    name="beerTimes"
+                    #beertimes="ngModel"
 
                     required>
-            <option value="" disabled selected>Select your option</option>
-            <option value="1">1</option>
-            <option value="2">2-3 </option>
-            <option value="3">3-5</option>
-            <option value="5">More than 5...</option>
-          </select>
-          <p *ngIf="!beertimes.valid&&beertimes.touched" style="color: red;">Hum ... ?! Dont worry,we are good at keeping secrets.</p>
+              <option value="" disabled selected>Select your option</option>
+              <option value="1">1</option>
+              <option value="2">2-3</option>
+              <option value="3">3-5</option>
+              <option value="5">More than 5...</option>
+            </select>
+            <p *ngIf="!beertimes.valid&&beertimes.touched" style="color: red;">Hum ... ?! Dont worry,we are good at
+              keeping secrets.</p>
 
-          <button class="btn btn-warning btn-sm col-xs-4  col-md-3 " type="button" [disabled]="!beertimes.valid">Get Advice</button>
-          <button class="btn btn-primary btn-sm col-xs-4  col-md-3 " type="submit" [disabled]="!favoriteBeer.valid">Get a Beer </button>
-        </div>
-      </form>
+            <button class="btn btn-warning btn-sm col-xs-4  col-md-3 " type="button" [disabled]="!beertimes.valid">Get
+              Advice
+            </button>
+            <button class="btn btn-primary btn-sm col-xs-4  col-md-3 " type="submit" [disabled]="!favoriteBeer.valid">
+              Get a Beer
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-
 </div>
